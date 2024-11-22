@@ -13,15 +13,13 @@ export function Pagina() {
   return (
     <div>
       <header>
-        <h1>Bem-vindo ao site</h1>
         <nav>
-        <img
-          src={imgHome}
-          alt="Home"
-          onClick={redirectToHome}
-          style={{ cursor: 'pointer', width: '150px', height: '200px' }}
-        />
-          {/* Botões para navegação */}
+          <img
+            src={imgHome}
+            alt="Home"
+            onClick={redirectToHome}
+            style={{ cursor: 'pointer', width: '5%', height: 'auto', borderRadius: '100%'}}
+          />
           <button onClick={() => navigate("/")}>Home</button>
           <button onClick={() => navigate("/Livro")}>Livro</button>
           <button onClick={() => navigate("/Autor")}>Autor</button>
@@ -31,7 +29,6 @@ export function Pagina() {
         </nav>
       </header>
       <main>
-        {/* Outlet renderiza as rotas filhas */}
         <Outlet />
       </main>
     </div>
