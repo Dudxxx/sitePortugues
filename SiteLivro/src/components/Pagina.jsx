@@ -1,30 +1,26 @@
-// import React from "react";
-// import { useNavigate } from "react-router-dom"; // Certifique-se de importar de react-router-dom
-
-// export function Pagina() {
-//   const navigate = useNavigate(); // Função correta: useNavigate()
-
-//   return (
-//     <div>
-//       <h1>Página de Exemplo</h1>
-//       {/* Navegação ao clicar no botão */}
-//       <button onClick={() => navigate("/Livro")}>Ir para Livro</button>
-//     </div>
-//   );
-// }
-
-
 import React from "react";
 import { useNavigate, Outlet } from "react-router-dom";
+import imgHome from "../assets/Machado.jpeg"
 
 export function Pagina() {
-  const navigate = useNavigate(); // Inicializa o useNavigate
+  const navigate = useNavigate(); 
+
+  const redirectToHome = () => {
+    navigate("/");
+  };
+
 
   return (
     <div>
       <header>
         <h1>Bem-vindo ao site</h1>
         <nav>
+        <img
+          src={imgHome}
+          alt="Home"
+          onClick={redirectToHome}
+          style={{ cursor: 'pointer', width: '150px', height: '200px' }}
+        />
           {/* Botões para navegação */}
           <button onClick={() => navigate("/")}>Home</button>
           <button onClick={() => navigate("/Livro")}>Livro</button>
