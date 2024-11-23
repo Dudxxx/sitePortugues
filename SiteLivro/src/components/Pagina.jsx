@@ -11,7 +11,7 @@ export function Pagina() {
 
 
   return (
-    <div>
+    <div className="bg-azul1 w-full h-5">
       <header>
         <nav>
           <img
