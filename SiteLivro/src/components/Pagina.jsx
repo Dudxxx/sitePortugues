@@ -1,31 +1,53 @@
 import React from "react";
-import { useNavigate, Outlet } from "react-router-dom";
-import imgHome from "../assets/Machado.jpeg"
+import { Outlet, useNavigate } from "react-router-dom";
+import imgHome from "../assets/Machado.jpeg";
 
 export function Pagina() {
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
 
   const redirectToHome = () => {
     navigate("/");
   };
 
-
   return (
-    <div className="bg-azul1 w-full h-5">
+    <div>
       <header>
-        <nav>
-          <img
-            src={imgHome}
-            alt="Home"
-            onClick={redirectToHome}
-            style={{ cursor: 'pointer', width: '5%', height: 'auto', borderRadius: '100%'}}
-          />
-          <button onClick={() => navigate("/")}>Home</button>
-          <button onClick={() => navigate("/Livro")}>Livro</button>
-          <button onClick={() => navigate("/Autor")}>Autor</button>
-          <button onClick={() => navigate("/Personagens")}>Personagens</button>
-          <button onClick={() => navigate("/Utfpr")}>UTFPR</button>
-          <button onClick={() => navigate("/Professora")}>Professora</button>
+        <nav className="navbar">
+          <div className="esquerda">
+            <img
+              src={imgHome}
+              alt="Home"
+              onClick={redirectToHome}
+              className="logo"
+            />
+          </div>
+          <ul className="nav-list">
+            <li>
+              <button className="nav-item" onClick={() => navigate("/Livro")}>
+                Livro
+              </button>
+            </li>
+            <li>
+              <button className="nav-item" onClick={() => navigate("/Autor")}>
+                Autor
+              </button>
+            </li>
+            <li>
+              <button className="nav-item" onClick={() => navigate("/Personagens")}>
+                Personagens
+              </button>
+            </li>
+            <li>
+              <button className="nav-item" onClick={() => navigate("/Utfpr")}>
+                UTFPR
+              </button>
+            </li>
+            <li>
+              <button className="nav-item" onClick={() => navigate("/Professora")}>
+                Professora
+              </button>
+            </li>
+          </ul>
         </nav>
       </header>
       <main>
