@@ -1,6 +1,5 @@
 import './Home.css'
 
-
 function Home() {
 
   return (
@@ -17,6 +16,9 @@ function Home() {
         </p>
         <p>
         •     Psicológico: Machado mergulha profundamente nas motivações, nos conflitos internos e nas ambiguidades dos personagens, principalmente os gêmeos Pedro e Paulo.</p>
+      </div>
+      <br />
+      <div className='introducao'>
         <h2>Resumo da Obra</h2>
         <p>
         O romance acompanha a vida dos gêmeos Pedro e Paulo, cuja rivalidade nasce ainda no ventre materno e persiste por toda a vida. Eles são filhos de Natividade, uma mulher supersticiosa e preocupada com o destino dos filhos, que consulta um vidente, o Dr. Pereira, logo após o nascimento dos gêmeos. Ele prevê que os dois terão futuros grandiosos, mas que estarão sempre em conflito, como os personagens bíblicos Esaú e Jacó, o que dá título à obra.
@@ -48,7 +50,7 @@ function Home() {
       <br />
 
       <div className='desenvolvimento'>
-        <h2>Desenvolvido por: Bruno Pena, Eduardo Pinheiro e Gabriel Vasco</h2>
+        <h4>Desenvolvido por: Bruno Pena, Eduardo Pinheiro e Gabriel Vasco</h4>
       </div>
     </div>
     
