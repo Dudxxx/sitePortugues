@@ -8,6 +8,7 @@ export function Pagina() {
   const redirectToHome = () => {
     navigate("/");
   };
+  
 
   return (
     <div>
@@ -21,32 +22,12 @@ export function Pagina() {
               className="logo"
             />
           </div>
-          <ul className="nav-list">
-            <li>
-              <button className="nav-item" onClick={() => navigate("/Livro")}>
-                Livro
-              </button>
-            </li>
-            <li>
-              <button className="nav-item" onClick={() => navigate("/Autor")}>
-                Autor
-              </button>
-            </li>
-            <li>
-              <button className="nav-item" onClick={() => navigate("/Personagens")}>
-                Personagens
-              </button>
-            </li>
-            <li>
-              <button className="nav-item" onClick={() => navigate("/Professora")}>
-                Professora
-              </button>
-            </li>
-            <li>
-              <button className="nav-item" onClick={() => navigate("/Utfpr")}>
-                UTFPR
-              </button>
-            </li>
+          <ul class="nav-list">
+            <li><button className="nav-item" onClick={() => navigate("/Livro")}>Livro</button></li>
+            <li><button className="nav-item" onClick={() => navigate("/Autor")}>Autor</button></li>
+            <li><button className="nav-item" onClick={() => navigate("/Personagens")}>Personagens</button></li>
+            <li><button className="nav-item" onClick={() => navigate("/Professora")}>Professora</button></li>
+            <li><button className="nav-item" onClick={() => navigate("/Utfpr")}>UTFPR</button></li>
           </ul>
         </nav>
       </header>

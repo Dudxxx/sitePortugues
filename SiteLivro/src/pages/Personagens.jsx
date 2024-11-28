@@ -3,6 +3,7 @@ import ilustraLivro from "../assets/ilustracaoImg.jpg";
 function Personagens() {
     return (
         <div className='conteinerPerson'>
+            <h1>Principais Personagens</h1>
             <div className='itemPerson'>
                 <h2>Pedro</h2>
                 <p>Pedro é um dos gêmeos e representa o conservadorismo e os valores ligados ao Império. Ele é caracterizado como impulsivo, emotivo e teimoso, sempre em conflito direto com seu irmão Paulo, mesmo em questões triviais. Pedro busca afirmar sua visão de mundo e seu domínio em diferentes aspectos da vida, o que o leva a rivalizar constantemente com o irmão, especialmente no campo amoroso. Ele é apaixonado por Flora, mas sua personalidade impulsiva e possessiva dificulta uma conexão genuína com ela. Pedro, em sua jornada, simboliza a resistência às mudanças sociais e políticas que marcam o Brasil do final do século XIX.</p>
