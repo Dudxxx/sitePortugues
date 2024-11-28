@@ -2,7 +2,7 @@ import livro from "../assets/livro.png";
 import prof from "../assets/profSandra.jpg";
 function Professora() {
     return (
-        <div className="containerProf">
+        <div className="conteinerProf"> 
             <div className="professora">
                 <h3>Professora Sandra Elis Aleixo</h3>
                 <img className="profImg" src={prof} alt="ProfSandra" />
@@ -10,10 +10,11 @@ function Professora() {
                     <img className="icon" src={livro} alt="iconLivro" />
                     <h3>Língua Portuguesa</h3>
                 </div>
-                <p><b>Formação:</b>&nbsp;&nbsp;&nbsp;&nbsp; Possui graduação em Letras Anglo Portuguesas pela Faculdade Estadual de Ciências e Letras de Campo Mourão(1996), especialização em Literatura Brasileira pela Faculdade Estadual de Ciências e Letras de Campo Mourão(1998) e mestradopela Universidade Estadual Paulista Júlio de Mesquita Filho(2002). Atualmente é professora da Universidade Tecnológica Federal do Paraná.</p>
+                <p><b>Formação:</b>&nbsp; Possui graduação em Letras Anglo Portuguesas pela Faculdade Estadual de Ciências e Letras de Campo Mourão(1996), especialização em Literatura Brasileira pela Faculdade Estadual de Ciências e Letras de Campo Mourão(1998) e mestradopela Universidade Estadual Paulista Júlio de Mesquita Filho(2002). Atualmente é professora da Universidade Tecnológica Federal do Paraná.</p>
                 
             </div>
             <div className="origemPortugues">
+                <h1>Origem do Português</h1>
                 <p>A língua portuguesa é um idioma derivado do latim vulgar, que se consolidou ao longo dos séculos como a língua oficial de Portugal e do Brasil, sendo também falada em vários outros países ao redor do mundo, como Angola, Moçambique, Cabo Verde, Guiné-Bissau, São Tomé e Príncipe e Timor-Leste. Essa disseminação é resultado do processo de colonização portuguesa, que expandiu a influência do idioma para diversos continentes.</p>
 
                 <p>

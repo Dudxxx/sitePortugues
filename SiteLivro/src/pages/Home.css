@@ -342,9 +342,8 @@ p{
 
   display: flex;
   justify-content: flex-start ;
-  align-items: center; 
+  align-items: flex-start; 
   flex-direction: row;
-  gap: 20px;
 }
 
 .iconLeft{
@@ -365,6 +364,7 @@ p{
 
   text-align: left;
   padding: 20px;
+  gap: 10px;
 }
 
 .professora h3{
@@ -372,18 +372,15 @@ p{
   font-size: larger;
 
   text-align: center;
-  color: aliceblue;
 }
 .professora h2{
   font-family:cursive ;
   font-size: larger;
   
   text-align: center;
-  color: aliceblue;
 }
 .professora p {
   text-indent: 0;
-  color: aliceblue;
 }
 
 .icon{
@@ -400,7 +397,7 @@ p{
 }
 
 .origemPortugues{
-  width: 70%;
+  width: 60%;
   border-radius: 25px;
   background-color: #3b746c;
 
@@ -415,6 +412,35 @@ p{
 
 /* Utfpr */
 
+.conteinerUtfpr{
+  width: 100%;
+  height: auto;
+    
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .imgUtfpr{
-  width: 60%;
+  width: 50%;
+  
+  border-radius: 25px;
+}
+
+.infoUtf{
+  width: 80%;
+  height: auto;
+  margin-bottom: 10px;
+  
+  background-color: #3b746c;
+  border-radius: 25px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
 }
