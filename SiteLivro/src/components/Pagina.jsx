@@ -38,13 +38,13 @@ export function Pagina() {
               </button>
             </li>
             <li>
-              <button className="nav-item" onClick={() => navigate("/Utfpr")}>
-                UTFPR
+              <button className="nav-item" onClick={() => navigate("/Professora")}>
+                Professora
               </button>
             </li>
             <li>
-              <button className="nav-item" onClick={() => navigate("/Professora")}>
-                Professora
+              <button className="nav-item" onClick={() => navigate("/Utfpr")}>
+                Utfpr
               </button>
             </li>
           </ul>
