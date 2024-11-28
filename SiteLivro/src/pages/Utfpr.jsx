@@ -1,11 +1,9 @@
-import React from 'react';
+import imgUtfpr from "../assets/Utfpr.jpg";
 
 function Utfpr() {
     return (
-        <div>
-            <div>
-                <img src="" alt="" />
-            </div>
+        <div className=''>
+            <img src={imgUtfpr} alt="Utfpr" className="imgUtfpr" />
             <div>
                 <p><b>A Universidade Tecnológica Federal do Paraná (UTFPR)</b> é uma instituição pública federal, com sede localizada em Curitiba, capital do Paraná. Originada do antigo Centro Federal de Educação Tecnológica do Paraná (CEFET), a UTFPR é amplamente reconhecida pela excelência acadêmica e pela forte ênfase em áreas tecnológicas. Com o lema *"Tecnologia e humanismo"*, a Universidade reflete seu compromisso em formar profissionais com uma visão integral.</p>
 

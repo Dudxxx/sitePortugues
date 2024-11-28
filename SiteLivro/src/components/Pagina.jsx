@@ -44,7 +44,7 @@ export function Pagina() {
             </li>
             <li>
               <button className="nav-item" onClick={() => navigate("/Utfpr")}>
-                Utfpr
+                UTFPR
               </button>
             </li>
           </ul>
