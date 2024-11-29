@@ -193,7 +193,7 @@ p{
 .livro {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start; 
   gap: 20px; 
 }
@@ -205,7 +205,7 @@ p{
   box-shadow: 8px 8px 12px 5px rgba(0, 0, 0, 0.2);
 
   padding: 20px;
-  margin: 1%;
+  margin-bottom: 10px;
 
   display: flex;
   justify-content: center;
@@ -228,6 +228,8 @@ p{
   text-align: justify;
   line-height: 1.6;
   height: auto; 
+
+  margin-bottom: 10px;
 }
 
 .itensSobre {
@@ -274,6 +276,8 @@ p{
 
   text-align: left;
   padding: 20px;
+  margin-bottom: 10px;
+
 }
 
 .autor {
@@ -296,6 +300,8 @@ p{
   text-align: justify;
   line-height: 1.6;
   padding: 20px;
+  margin-bottom: 10px;
+
 }
 
 .infoAutor h2{
@@ -378,6 +384,8 @@ p{
   text-align: left;
   padding: 20px;
   gap: 10px;
+  margin-bottom: 10px;
+
 }
 
 .professora h3{
@@ -422,6 +430,8 @@ p{
   text-align: justify;
   line-height: 1.6;
   padding: 20px;
+  margin-bottom: 10px;
+ 
 }
 
 /* Utfpr */
