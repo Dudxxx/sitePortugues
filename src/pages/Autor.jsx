@@ -14,6 +14,7 @@ function Autor() {
                     <li className="principaisObras">Helena (1876) </li>
                     <li className="principaisObras">Pai contra mãe (1906) </li>
                     <li className="principaisObras">Esaú e Jacó (1904) </li>
+                    <li className="principaisObras">teste</li>
                 </ul>
             </div>
             <div className="biografiaAutor">
