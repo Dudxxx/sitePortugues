@@ -266,6 +266,7 @@ p {
 
 /* Personagens */
 .conteinerPerson {
+  margin-top: 4vh;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -290,7 +291,7 @@ p {
   align-items: center;
   flex-direction: column;
   width: 35%;
-  height: 67vh;
+  height: 40vh;
 }
 
 .imgIlus {
@@ -410,3 +411,6 @@ p {
   width: 55%;
 }
 
+.top {
+  margin-top: 3vh;
+}
