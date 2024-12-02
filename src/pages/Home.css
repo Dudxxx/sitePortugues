@@ -1,28 +1,25 @@
-*{
+* {
   padding: 0;
   margin: 0 auto;
   font-family: 'Times New Roman', Times, serif;
+  color: #fff; /* Cor do texto em todo o site */
 }
 
-main{
+body {
+  background-color: #121212; /* Cor de fundo escura para o corpo da página */
+}
+
+main {
   padding: 20px;
   margin: 0;
   height: 81vh;
   width: auto;
-
-  
 }
 
-h1{
+h1, h2, h3 {
   text-align: center;
+  color: #fff; /* Cor dos títulos */
 }
-h2{
-  text-align: center;
-}
-h3{
-  text-align: center;
-}
-
 
 ::-webkit-scrollbar {
   width: 10px;
@@ -30,163 +27,129 @@ h3{
 }
 
 ::-webkit-scrollbar-track {
-  background: #3b746c;
+  background: #333;
 }
 
 ::-webkit-scrollbar-thumb {
-  background:#61A49B; 
+  background: #333;
 }
 
 /* Pagina */
-
 header {
-  background-color: #61A49B; 
+  background-color: #333; /* Fundo mais escuro */
   padding: 10px 0px 10px 0px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 100%;
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90vw;
+  height: 10vh;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.esquerda {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.logo {
+  height: 90%;
+  border-radius: 100%;
+  margin: 0;
+}
+
+.logo:hover {
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.nav-list {
+  display: flex;
+  width: auto;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  background-color: transparent;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin-left: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-item:hover {
+  background-color: #333;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
   .navbar {
-    display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    width: 90vw;
-    height: 10vh;
-    margin: 0 auto;
-    padding: 0;
   }
 
-  .esquerda{
-    width: 100%;
-    height: 100%;
-
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  .logo {
-    height: 90%;
-    border-radius: 100%;
-    margin: 0;
-  }
-
-  .logo:hover{
-    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
-    transition: box-shadow 0.3s ease;
-  }
   .nav-list {
-    display: flex;
-    width: auto;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    flex-direction: column;
+    margin-top: 10px;
   }
 
   .nav-item {
-    background-color: transparent;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    margin-left: 10px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  .nav-item:hover{
-    background-color: #3b746c;
-  }
-  
-  /* Responsividade */
-  @media (max-width: 768px) {
-    .navbar {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .nav-list {
-      flex-direction: column;
-      margin-top: 10px;
-    }
-  
-    .nav-item {
-      margin-left: 0;
-      margin-bottom: 10px;
-      padding: 10px 15px;
-    }
-  
-    .logo {
-      width: 50px;
-    }
+    margin-left: 0;
+    margin-bottom: 10px;
+    padding: 10px 15px;
   }
 
-/* home */
+  .logo {
+    width: 50px;
+  }
+}
 
-.introducao{
-  width: 100%;
-  height: 100%;
-
-  background-color: #3b746c;
+/* Home */
+.introducao, .sobre, .desenvolvimento {
+  background-color: #333;
   border-radius: 25px;
   box-shadow: 8px 8px 12px 5px rgba(0, 0, 0, 0.2);
-
-
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto; 
+  margin: 0 auto;
   line-height: 1.6;
-
 }
 
-.sobre{
-  width: 100%;
-  height: 100%;
-
-  background-color: #3b746c;
-  border-radius: 25px;
-  box-shadow: 8px 8px 12px 5px rgba(0, 0, 0, 0.2);
-
-
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin: 0 auto; 
-  line-height: 1.6;
+.sobre {
+  background-color: #333;
 }
 
 .sobre h2 {
   font-size: 1.5rem;
-  margin-top: 10px; 
+  margin-top: 10px;
 }
 
 .sobre p {
   font-size: 1rem;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
 }
 
-p{
+p {
   text-indent: 20px;
   width: 80%;
   padding-bottom: 10px;
-  text-align: justify; 
-}
-
-.desenvolvimento{
-  width: 100%;
-  height: 100%;
-
-  background-color: #3b746c;
-  border-radius: 25px;
-  box-shadow: 8px 8px 12px 5px rgba(0, 0, 0, 0.2);
-
-
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin: 0 auto; 
-  line-height: 1.6;
+  text-align: justify;
+  color: #fff; /* Manter o texto branco */
 }
 
 /* Livro */
@@ -194,41 +157,37 @@ p{
   width: 100%;
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start; 
-  gap: 20px; 
+  align-items: flex-start;
+  gap: 20px;
 }
 
 .informacaoLivro {
   width: 25%;
-  background-color: #3b746c;
+  background-color: #333;
   border-radius: 25px;
   box-shadow: 8px 8px 12px 5px rgba(0, 0, 0, 0.2);
-
   padding: 20px;
   margin-bottom: 10px;
-
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  height: auto; 
+  height: auto;
 }
 
 .sobreLivro {
   width: 70%;
   padding: 20px;
-  background-color: #3b746c;
+  background-color: #333;
   border-radius: 25px;
   box-shadow: 8px 8px 12px 5px rgba(0, 0, 0, 0.2);
-
   display: flex;
-  align-items: flex-start; 
+  align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
   text-align: justify;
   line-height: 1.6;
-  height: auto; 
-
+  height: auto;
   margin-bottom: 10px;
 }
 
@@ -239,7 +198,7 @@ p{
 
 .img {
   width: 60%;
-  height: auto; 
+  height: auto;
   margin-bottom: 3%;
   margin-top: 5%;
   border-radius: 22px;
@@ -248,51 +207,43 @@ p{
 .itensLivro {
   margin-bottom: 3%;
   text-align: justify;
-  text-indent: 0; 
+  text-indent: 0;
 }
 
-
 /* Autor */
-
 .containerAutor {
   width: 100%;
   display: flex;
-  align-items: flex-start; 
+  align-items: flex-start;
   flex-direction: row;
-  gap: 20px; 
+  gap: 20px;
 }
 
 .infoAutor {
   width: 25%;
-  background-color: #3b746c;
+  background-color: #333;
   border-radius: 25px;
   box-shadow: 8px 8px 12px 5px rgba(0, 0, 0, 0.2);
-
-
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
-
   text-align: left;
   padding: 20px;
   margin-bottom: 10px;
-
 }
 
 .autor {
   margin: 3%;
   width: 60%;
-  height: auto; 
+  height: auto;
 }
 
 .biografiaAutor {
   width: 70%;
   border-radius: 25px;
-  background-color: #3b746c;
+  background-color: #333;
   box-shadow: 8px 8px 12px 5px rgba(0, 0, 0, 0.2);
-
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -301,172 +252,148 @@ p{
   line-height: 1.6;
   padding: 20px;
   margin-bottom: 10px;
-
 }
 
-.infoAutor h2{
+.infoAutor h2 {
   text-align: center;
   margin-bottom: 5%;
 }
 
-.infoAutor h3{
+.infoAutor h3 {
   width: 55%;
   text-align: left;
 }
 
 /* Personagens */
-
-.conteinerPerson{
+.conteinerPerson {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-
   width: 85%;
   height: auto;
   gap: 20px;
 }
-.conteinerPerson h1{
+
+.conteinerPerson h1 {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), -2px -2px 5px rgba(128, 128, 128, 0.2);
 }
 
-.itemPerson{
-  background-color: #3b746c;
+.itemPerson {
+  background-color: #333;
   padding: 20px;
   border-radius: 25px;
   box-shadow: 8px 8px 12px 5px rgba(0, 0, 0, 0.2);
-
-
   text-align: justify;
-
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-
 }
 
-.imgIlus{
+.imgIlus {
   width: 100%;
   height: auto;
-  border-radius:25px 25px 0px 0px ;
+  border-radius: 25px 25px 0px 0px;
 }
+
 /* Professora */
-
-.conteinerProf{
+.profImg{
+  margin-left: 100px;
+  margin: 3%;
+  width: 60%;
+  height: auto; 
+  border-radius: 25px 0px 25px 0px;
+}
+.conteinerProf {
   width: 100%;
   height: auto;
-
   display: flex;
   justify-content: flex-start ;
   align-items: flex-start; 
   flex-direction: row;
 }
 
-.iconLeft{
+.iconLeft {
   float: left; 
   width:60%;
   display: flex;
 }
-
-.professora{
+.professora {
   width: 25%;
-  background-color: #3b746c;
+  background-color: #333;
   border-radius: 25px;
   box-shadow: 8px 8px 12px 5px rgba(0, 0, 0, 0.2);
-
-
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
-
   text-align: left;
   padding: 20px;
   gap: 10px;
   margin-bottom: 10px;
-
 }
 
-.professora h3{
-  font-family:cursive ;
+.professora h3 {
+  font-family: cursive;
   font-size: larger;
-
   text-align: center;
 }
-.professora h2{
-  font-family:cursive ;
+
+.professora h2 {
+  font-family: cursive;
   font-size: larger;
-  
   text-align: center;
 }
+
 .professora p {
   text-indent: 0;
 }
 
-.icon{
+.icon {
   width: 8%;
   height: auto;
-
 }
 
-.profImg{
-    margin: 3%;
-    width: 60%;
-    height: auto; 
-    border-radius: 25px 0px 25px 0px;
+.origemPortugues {
+  width: 90%;
+  padding: 10px;
+  margin-top: 4%;
 }
 
-.origemPortugues{
-  width: 60%;
-  border-radius: 25px;
-  background-color: #3b746c;
-  box-shadow: 8px 8px 12px 5px rgba(0, 0, 0, 0.2);
+.origemPortugues h2 {
+  text-align: center;
+}
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+.origemPortugues ul {
+  margin-left: 10%;
+  list-style: square;
+}
+
+.conteinerProf p {
   text-align: justify;
-  line-height: 1.6;
-  padding: 20px;
-  margin-bottom: 10px;
- 
 }
 
-/* Utfpr */
-
-.conteinerUtfpr{
+/* UTFPR */
+.conteinerUtfpr {
+  display: flex;
+  gap: 20px;
   width: 100%;
-  height: auto;
-    
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: column;
-  gap: 20px;
 }
 
-.imgUtfpr{
+.imgUtfpr {
   width: 50%;
-  
   border-radius: 25px;
 }
 
-.infoUtf{
-  width: 80%;
-  height: auto;
-  margin-bottom: 10px;
-  
-  background-color: #3b746c;
-  border-radius: 25px;
-  
+.infoUtf {
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
   flex-direction: column;
-  padding: 20px;
-  gap: 20px;
+  align-items: flex-start;
+  padding: 15px;
+  width: 50%;
+  background-color: #333;
+  border-radius: 25px;
   box-shadow: 8px 8px 12px 5px rgba(0, 0, 0, 0.2);
-
+  text-align: justify;
 }
