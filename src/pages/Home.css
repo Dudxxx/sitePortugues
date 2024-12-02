@@ -267,7 +267,7 @@ p {
 /* Personagens */
 .conteinerPerson {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   width: 85%;
@@ -289,10 +289,14 @@ p {
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
+  width: 35%;
+  height: 67vh;
 }
 
 .imgIlus {
-  width: 100%;
+  
+  margin-left: 10%;
+  width: 80%;
   height: auto;
   border-radius: 25px 25px 0px 0px;
 }
@@ -397,3 +401,12 @@ p {
   box-shadow: 8px 8px 12px 5px rgba(0, 0, 0, 0.2);
   text-align: justify;
 }
+
+.carta {
+  width: 50%;
+}
+
+.pers {
+  width: 55%;
+}
+
